@@ -14,7 +14,7 @@
     <div class="spinner"></div>
     <header>
         <img src="./assets/logo.png" alt="Super Hero Network Logo" id="logo">
-        <nav class="navBar">
+        <nav>
             <div>
                 <a>Home</a>
                 <a>Personajes</a>
@@ -35,38 +35,50 @@
                     <input type="text" name="alias" id="txtAlias" placeholder="Alter ego:" required /><br />
                     <fieldset>
                         <legend>Editorial</legend>
-                        <input type="radio" name="editorial" id="editorialM" value="marvel" checked /><br />
-                        <label>Marvel</label><br />
-                        <input type="radio" name="editorial" id="editorialDC" value="dc" /><br />
-                        <label>DC</label>
+                        <input type="radio" name="editorial" id="editorialM" value="marvel" checked />
+                        <img src="./assets/Marvel_Logo.png">
+                        <input type="radio" name="editorial" id="editorialDC" value="dc" />
+                        <img src="./assets/dc.png">
                     </fieldset>
                     <br>
                     <label>fuerza:</label><br />
                     <input type="range" name="fuerza" id="rngFuerza" min="1" max="1000" /><br />
                     <label>arma:</label><br />
                     <select name="arma" id="selecArma">Armadura</select>
-                        <option value="armadura">armadura</option>
-                        <option value="espada">espada</option>
-                        <option value="martillo">martillo</option>
-                        <option value="escudo">escudo</option>
-                        <option value="arma de fuego">arma de fuego</option>
-                        <option value="flechas">flechas</option>
-                    </section>
-                    <button type="submit" id="guardar">Guardar</button></fieldset>
-                </fieldset>
-            </form>
-            </seccion>
+                    <option value="armadura">armadura</option>
+                    <option value="espada">espada</option>
+                    <option value="martillo">martillo</option>
+                    <option value="escudo">escudo</option>
+                    <option value="arma de fuego">arma de fuego</option>
+                    <option value="flechas">flechas</option>
+        </section>
+        <button type="submit" id="guardar">Guardar</button></fieldset>
+        </fieldset>
+        </form>
+        </seccion>
 
-            <section class="seccion-tabla" id="tablaSec">
-                <h2>Listado de anuncios</h2>
-                <p>
-                    <button type="submit" id="guardar">Guardar</button>
-                    <button type="button" id="eliminar">Eliminar</button>
-                    <button type="button" id="cancelar">Cancelar</button>
-                </p>
-                <div id="tabla"></div>
-            </section>
+        <section class="seccion-tabla" id="tablaSec">
+            <h2>Listado de superheroes</h2>
+            <p>
+                <button type="submit" id="guardar">Guardar</button>
+                <button type="button" id="eliminar">Eliminar</button>
+                <button type="button" id="cancelar">Cancelar</button>
+            </p>
+            <div id="tabla"></div>
+        </section>
     </main>
+    <footer>
+        <br>
+        <div id="footerLinks">
+            <a>Home</a>
+            <a>Personajes</a>
+            <a>Blog</a>
+            <a>Contacto</a>
+        </div>
+        <div id="derechos">
+            <a>Laboratorio III - Todos los derechos reservador © </a>
+        </div>
+    </footer>
 </body>
 
 </html>

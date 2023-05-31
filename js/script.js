@@ -5,6 +5,15 @@ const $seccionTabla = document.getElementById("tabla"),
   $formulario = document.forms[0],
   superheroes = JSON.parse(localStorage.getItem("superheroes")) || [];
 
+const armas = [
+  "armadura",
+  "espada",
+  "martillo",
+  "escudo",
+  "arma de fuego",
+  "flechas",
+];
+
 if (superheroes.length) actualizarTabla($seccionTabla, superheroes);
 
 $formulario.addEventListener("submit", (e) => {

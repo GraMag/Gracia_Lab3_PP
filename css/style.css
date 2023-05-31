@@ -17,14 +17,27 @@
     }
 }
 
-header {
+header, footer {
     background-image: url("../assets/header.avif");
     background-size: cover;
 }
 
-nav {
+nav{
     text-align: right;
     padding-right: 50px;
+}
+
+footer {
+    text-align: left;
+    padding-right: 50px;
+}
+
+#derechos{
+    text-align: right;
+}
+
+#footerLinks{
+    text-align: left;
 }
 
 #logo {
@@ -138,3 +151,7 @@ td {
 #cancelar {
     background-color: rgb(26, 26, 201);
 }
+ img{
+    width: 45px;
+ }
+ 
